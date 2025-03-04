@@ -1,2 +1,2 @@
 # California Economic Dashboard Repository
-Website dashboard with up-to-date data on Callifornia's economic health
+Dashboard with up-to-date data on Callifornia's economic health
