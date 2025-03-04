@@ -1,0 +1,117 @@
+#header{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+body, html {
+    height: 100%
+}
+
+/*
+.hero-image {
+    background-image: url("file:///C:/Users/coope/OneDrive/Documents/created/projects/cal%20site%20project/website%20images/pngs/welcome%20(current).png");
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+*/
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+}
+
+body {
+    background-image: url("/static/images/cal_background.png");
+    background-size: cover;
+    background-position: center;
+}
+
+/****************
+*
+* Text changes
+*
+*****************/
+
+/* Custom Fonts */
+
+@font-face {
+    font-family: "California Gothic";
+    src: url("https://db.onlinewebfonts.com/t/f0a6eafad1b0d2b9d6ec7fdb03733bac.eot");
+    src: url("https://db.onlinewebfonts.com/t/f0a6eafad1b0d2b9d6ec7fdb03733bac.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/f0a6eafad1b0d2b9d6ec7fdb03733bac.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/f0a6eafad1b0d2b9d6ec7fdb03733bac.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/f0a6eafad1b0d2b9d6ec7fdb03733bac.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/f0a6eafad1b0d2b9d6ec7fdb03733bac.svg#California Gothic")format("svg");
+}
+/**/
+
+h1 {
+    font-size: 60px;
+    font-family: "California Gothic", Verdana;
+}
+
+h2 {
+    font-size: 40px;
+    font-family: "California Gothic", Verdana;
+}
+
+h3 {
+    font-size: 28px;
+    font-family: "California Gothic", Verdana;
+}
+
+h4 {
+    font-size: 24px;
+    font-family: "California Gothic", Verdana;
+}
+
+p{
+    font-size: 20px;
+    font-family: Arial;
+}
+
+/****************
+*
+* Layout Elements changes
+*
+*****************/
+
+.article-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+
+.article {
+    padding-left: 20px;
+    background-image: url("/static/images/textbox.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+
+/****************
+*
+* Link Style
+*
+*****************/
+
+a:link, a:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+a:hover, a:active {
+    color: #ba0c2f;
+    background-color: transparent;
+    text-decoration: none;
+  }

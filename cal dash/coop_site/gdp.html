@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+		<meta name="description">
+		<title>CalDash: GDP</title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/syntax.css') }}">
+		<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    </head>
+    <body>
+        <header>
+			<h1><a href="{{ url_for('index') }}" title="Click to go back to dashboard">California Economic Dashboard</a></h1>
+		</header>
+        <main>
+			<section><h2>Gross Domestic Product</h2></section>
+			
+			<section class="article-container">
+				<article class="article">
+					<h3><b><a href="{{ url_for('gdp_numbers') }}" title="Click for more GDP statistics">GDP Numbers</a></b></h3>
+					<p>Real GDP: </p>
+					<p>Real GDP Per Capita: </p>
+                    <p>Nominal GDP: </p>
+                    <p>Nominal GDP Per Capita: </p>
+                </article>
+
+                <article class="article">
+					<h3><b>GDP Growth</b></h3>
+                    <p>Nominal GDP Growth: </p>
+					<p>Real GDP Growth: </p>
+                    <p>Nominal GDP Per Capita Growth:</p>
+					<p>Real GDP Per Capita Growth: </p>
+                </article>
+
+                <article class="article">
+					<h3><b>GDP Breakup</b></h3>
+					<p>Consumption: </p>
+					<p>Investment: </p>
+					<p>Government Expenditure: </p>
+					<p>Imports: </p>
+					<p>Exports: </p>
+				</article>
+
+                <article class="article">
+					<h3><b>GDP By Sector</b></h3>
+					<p>Fortnite Sector: </p>
+				</article>
+
+			</section>
+        </main>
+    </body>
+    
+</html>

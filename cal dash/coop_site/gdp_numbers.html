@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>CalDash: GDP Numbers</title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/syntax.css') }}">
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    </head>
+    <body>
+        <header>
+			<h1><a href="{{ url_for('index') }}" title="Click to go back to dashboard">California Economic Dashboard</a></h1>
+		</header>
+        <main>
+            <section><h2><a href="{{ url_for('gdp') }}" title="Click to go back to Gross Domestic Product">Gross Domestic Product</a></h2></section>
+			<section><h2>GDP Numbers</h2></section>
+			
+			<section class="article-container">
+				<article class="article">
+					<h3><b>Real GDP</b></h3>
+					<p>{{ number.real }}</p>
+                </article>
+
+                <article class="article">
+					<h3><b>Real GDP Per Capita</b></h3>
+                    <p>Number</p>
+                </article>
+
+                <article class="article">
+					<h3><b>Nominal GDP</b></h3>
+                    <p>{{ number.nominal }}</p>
+                </article>
+
+                <article class="article">
+					<h3><b>Nominal GDP Per Capita</b></h3>
+                    <p>Number</p>
+                </article>
+
+			</section>
+        </main>
+    </body>
+    
+</html>
